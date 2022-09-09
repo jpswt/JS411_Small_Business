@@ -31,7 +31,7 @@ const Map = (props) => {
 
 	const { isLoaded } = useJsApiLoader({
 		id: 'google-map-script',
-		googleMapsApiKey: 'AIzaSyAfQRfxhtSDCA1NKKWRrS-cQ4zB4fHoZEU',
+		googleMapsApiKey: apiKey,
 	});
 
 	// const mapStyle = useCallback((map) => (mapRef.current = map), []);

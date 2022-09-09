@@ -37,7 +37,7 @@ export const deleteListing = (index) => {
 // 	const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
 // 	return (dispatch) => {
 // 		fetch(
-// 			`https://maps.google.com/maps/api/geocode/json?address=${listing.address}&key=AIzaSyAfQRfxhtSDCA1NKKWRrS-cQ4zB4fHoZEU`
+// 			`https://maps.google.com/maps/api/geocode/json?address=${listing.address}&key=${apiKey}`
 // 		)
 // 			.then((res) => res.json())
 // 			.then((response) => {
