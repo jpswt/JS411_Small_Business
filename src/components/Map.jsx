@@ -15,6 +15,7 @@ const containerStyle = {
 // };
 
 const Map = (props) => {
+	console.log('Map props are:', props);
 	// const mapRef = useRef();
 	const center = useMemo(() => ({ lat: 30.266, lng: -97.733 }), []);
 	const options = useMemo(
@@ -31,7 +32,7 @@ const Map = (props) => {
 
 	const { isLoaded } = useJsApiLoader({
 		id: 'google-map-script',
-		googleMapsApiKey: apiKey,
+		googleMapsApiKey: 'AIzaSyAfQRfxhtSDCA1NKKWRrS-cQ4zB4fHoZEU',
 	});
 
 	// const mapStyle = useCallback((map) => (mapRef.current = map), []);
@@ -81,7 +82,6 @@ const Map = (props) => {
 				name="Testing"
 				color="secondary"
 			/>
-			<></>
 		</GoogleMap>
 	) : (
 		<></>
